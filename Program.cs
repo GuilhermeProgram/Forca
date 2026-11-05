@@ -1,4 +1,7 @@
-﻿string palavra = "banana";
+string[] palavras = { "banana", "abacaxi", "computador", "azure", "xbox" };
+Random sorteio = new Random();
+string palavra = palavras[sorteio.Next(0, palavras.Length)];
+string palavra = "banana";
 string acertadas = "";
 int erros = 0;
 bool ganhou = false;
