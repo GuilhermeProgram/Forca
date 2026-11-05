@@ -8,6 +8,23 @@ while (i < palavra.Length)
 }
 
 Console.WriteLine(mostrada);
+
+Console.WriteLine("Digite uma letra: ");
+string letra = Console.ReadLine().ToLower();
+
+if (letra.Length != 1)
+{
+    Console.WriteLine("Digite apenas UMA letra.");
+}
+else if (palavra.Contains(letra))
+{
+    Console.WriteLine("Tem essa letra!");
+}
+else
+{
+    Console.WriteLine("Não tem essa letra.");
+}
+
 Console.WriteLine("Pressione qualquer tecla para sair...");
 
 
